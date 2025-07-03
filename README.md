@@ -1,48 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM Workflow in Python - README</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-    </style>
-</head>
-<body class="bg-gray-100 text-gray-800 p-4 sm:p-6 md:p-8 lg:p-10">
-    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 sm:p-8 md:p-10">
-        <!-- Title -->
-        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
+
+<h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
             ATM Workflow in Python
         </h1>
-
         <!-- Project Description -->
         <p class="text-lg mb-6 leading-relaxed">
             This project simulates a basic ATM (Automated Teller Machine) workflow using Python. It demonstrates
             fundamental concepts of object-oriented programming, file handling for data persistence (balance and
             password), and a simple command-line interface.
         </p>
-
         <!-- Features Section -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-1">
             Features
         </h2>
         <ul class="list-disc list-inside space-y-2 mb-6 ml-4 text-lg">
-            <li><strong class="font-medium">Check Balance:</strong> View the current account balance.</li>
+            <li><strong class="font-medium"><u>Check Balance:</u></strong> View the current account balance.</li>
             <li><strong class="font-medium">Withdraw Money:</strong> Withdraw funds from the account, with checks for insufficient balance.</li>
             <li><strong class="font-medium">Deposit Money:</strong> Deposit funds into the account.</li>
             <li><strong class="font-medium">Reset Password:</strong> Change the ATM PIN.</li>
             <li><strong class="font-medium">Check Current Password:</strong> Display the currently set PIN.</li>
             <li><strong class="font-medium">Secure (Basic) Password Check:</strong> Requires a password to access ATM operations.</li>
-        </ul>
-
-        <!-- How to Run Section -->
+        </ul><!-- How to Run Section -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-1">
             How to Run
         </h2>
@@ -53,7 +30,6 @@ cd &lt;repository-directory&gt;</code></pre>
             <p class="text-base text-gray-600">
                 (Replace <code class="bg-gray-200 rounded px-1 py-0.5 text-sm">&lt;repository-url&gt;</code> and <code class="bg-gray-200 rounded px-1 py-0.5 text-sm">&lt;repository-directory&gt;</code> with your actual repository details if you have one.)
             </p>
-
             <p class="text-lg">2. <strong class="font-medium">Create necessary files:</strong></p>
             <p class="text-base">
                 The script uses two files for data persistence. Please create these empty files in a directory named
@@ -69,10 +45,8 @@ cd &lt;repository-directory&gt;</code></pre>
             <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto text-sm sm:text-base"><code>mkdir "Atm Management Project"
 touch "Atm Management Project/balance.txt"
 touch "Atm Management Project/password.txt"</code></pre>
-
             <p class="text-lg">3. <strong class="font-medium">Run the Python script:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-x-auto text-sm sm:text-base"><code>python ATM.py</code></pre>
-
             <p class="text-lg">4. <strong class="font-medium">Follow the on-screen prompts:</strong></p>
             <ul class="list-disc list-inside space-y-1 ml-4 text-lg">
                 <li>Enter your name.</li>
@@ -80,7 +54,6 @@ touch "Atm Management Project/password.txt"</code></pre>
                 <li>Choose from the menu options (Check Balance, Withdraw, Deposit, Reset Password, Check Password, Exit).</li>
             </ul>
         </div>
-
         <!-- File Structure Section -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-1">
             File Structure
@@ -95,7 +68,6 @@ touch "Atm Management Project/password.txt"</code></pre>
             <li><code class="bg-gray-200 rounded px-1 py-0.5 text-sm">Atm Management Project/balance.txt</code>: Stores the current account balance.</li>
             <li><code class="bg-gray-200 rounded px-1 py-0.5 text-sm">Atm Management Project/password.txt</code>: Stores the ATM password (PIN).</li>
         </ul>
-
         <!-- Code Overview Section -->
         <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 border-b border-gray-300 pb-1">
             Code Overview
@@ -136,6 +108,4 @@ touch "Atm Management Project/password.txt"</code></pre>
             <li><strong class="font-medium">Error Handling:</strong> Basic <code class="bg-gray-200 rounded px-1 py-0.5 text-sm">try-except</code> blocks are used for file operations and input validation, but more comprehensive error handling would be needed for a production-ready system.</li>
             <li><strong class="font-medium">Data Persistence:</strong> The balance and password are saved to text files, so they persist between runs of the script.</li>
         </ul>
-    </div>
-</body>
-</html>
+
